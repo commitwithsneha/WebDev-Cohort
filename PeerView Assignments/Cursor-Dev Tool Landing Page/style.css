@@ -23,11 +23,14 @@
     --space-md: 12px;
     --space-lg: 16px;
     --space-xl: 20px;
+    --spacing-g0\.75: calc(calc(10rem/16)*.75);
+    --spacing-g1: calc(calc(10rem/16)*1);
 
     /* Button */
     --color-theme-button-bg: #edecec;
 
     /* Radius */
+    --radius-xs: 4px;
     --radius-sm: 6px;
     --radius-md: 8px;
     --radius-full: 999px;
@@ -43,8 +46,10 @@
 
     --font-weight-normal: 400;
 
-    --button-padding-default:.78em 1.35em .8em; 
+    --button-padding-default: .78em 1.35em .8em;
     --button-padding-sm: .4rem .75rem .42rem;
+
+    --color-theme-card-hex: #1b1913;
 }
 
 /* 
@@ -260,7 +265,7 @@ main {
     padding: 112px 20px 72px;
 }
 
-.container-hero {
+.container {
     max-width: var(--container-max);
     margin-inline: auto;
 }
@@ -272,12 +277,13 @@ main {
     word-spacing: -.0125em;
     margin-bottom: calc(1rem*1.4);
 }
-.download-btn{
+
+.download-btn {
     background-color: var(--color-theme-button-bg);
     border: 1px solid var(--color-theme-button-bg);
     color: #14120b;
     cursor: pointer;
-    font-size:1rem;
+    font-size: 1rem;
     font-weight: var(--font-weight-normal);
     padding: var(--button-padding-default);
     border-radius: 3.40282e38px;
@@ -286,7 +292,8 @@ main {
     line-height: 1;
     display: inline-flex;
 }
-.cta-row a{
+
+.cta-row a {
     text-decoration: none;
     font-size: 1rem;
     border-radius: var(--radius-full);
@@ -295,7 +302,7 @@ main {
 
 .hero-media {
     margin-top: 64px;
-   
+
 }
 
 .media-frame {
@@ -303,34 +310,67 @@ main {
     margin-inline: auto;
     border-radius: 12px;
     overflow: hidden;
-  
-    box-shadow:
-      0 40px 120px rgba(0,0,0,0.6),
-      inset 0 0 0 1px rgba(255,255,255,0.04);
-  }
 
-  .media-frame img {
+    box-shadow:
+        0 40px 120px rgba(0, 0, 0, 0.6),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.media-frame img {
     width: 100%;
     height: auto;
     display: block;
-  
-    transform: scale(1.03); 
-  }
-  
+
+    transform: scale(1.03);
+}
+
 /*Trusted By/Logos Section*/
 
-.logo-garden{
-    padding:0px 20px 33.600px 20px;
-}   
+.logo-garden {
+    padding: 0px 20px 33.600px 20px;
+}
 
-.container-logo{
+.container-logo {
     margin: 0 auto;
 }
 
-.logo-gardern-title{
+.logo-gardern-title {
     text-align: center;
     font-size: 0.9rem;
     margin-bottom: 22.4px;
     color: var(--text-primary);
     font-weight: var(--font-weight-normal);
+}
+
+.logo-gardern-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    gap: var(--spacing-g1);
+}
+
+.logo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.logo-card-inner {
+    width: 100%;
+    height: 6.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: var(--spacing-g0\.75);
+    background-color: var(--color-theme-card-hex);
+    border-radius: var(--radius-xs);
+}
+
+.logo-card-inner img {
+    height: 2.5rem;
+    width: auto;
 }
