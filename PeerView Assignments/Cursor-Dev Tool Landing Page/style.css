@@ -1,5 +1,7 @@
 :root {
-    /* Colors */
+    /* =========================
+     Colors
+     ========================= */
     --bg-page: #14120b;
     --bg-navbar: #15140e;
     --bg-dropdown: #1a170f;
@@ -10,53 +12,86 @@
 
     --border-subtle: rgba(255, 255, 255, 0.35);
 
-    /* Typography */
-    --font-sans: Inter, system-ui, sans-serif;
+    --color-theme-accent: #f54e00;
+    --color-theme-button-bg: #edecec;
+    --color-theme-card-hex: #1b1913;
+    --color-theme-text-sec: color-mix(in oklab, #edecec 60%, transparent);
+
+    /* =========================
+     Typography
+     ========================= */
+    --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --font-weight-normal: 400;
+
     --text-xs: 0.875rem;
     --text-sm: 0.975rem;
-    --line-sm: 1.25rem;
     --text-md-lg: 1.625rem;
+    --text-lg: 2.25rem;
 
-    /* Spacing */
+    --line-sm: 1.25rem;
+    --leading-xsnug: 1.2;
+    --leading-normal: 1.5;
+
+    /* =========================
+     Spacing (Grid / Vertical)
+     ========================= */
+    --grid-gap: calc(12rem / 15);
+
+    /* Grid spacing */
+    --spacing-g0\.25: calc((10rem / 16) * 0.25);
+    --spacing-g0\.75: calc((10rem / 16) * 0.75);
+    --spacing-g1: calc((10rem / 16) * 1);
+    --spacing-g1\.75: calc((10rem / 16) * 1.75);
+    --spacing-g2: calc((10rem / 16) * 2);
+    --spacing-g3: calc((10rem / 16) * 3);
+
+    /* Vertical rhythm */
+    --spacing-v2: calc(1rem * 1.4 * 2);
+    --spacing-v2\.5: calc(1rem * 1.4 * 2.5);
+    --spacing-v3: calc(1rem * 1.4 * 3);
+    --spacing-v4: calc(1rem * 1.4 * 4);
+    --spacing-v8\/12: calc((1rem * 1.4 * 8) / 12);
+
+    /* Utility spacing */
     --space-xs: 4px;
     --space-sm: 8px;
     --space-md: 12px;
     --space-lg: 16px;
     --space-xl: 20px;
-    --spacing-g0\.75: calc(calc(10rem/16)*.75);
-    --spacing-g0\.25: calc(calc(10rem/16)*.25);
-    --spacing-g1: calc(calc(10rem/16)*1);
-    --spacing-g2: calc(calc(10rem/16)*2);
-    --spacing-g3: calc(calc(10rem/16)*3);
-    --spacing-v3: calc(1rem*1.4*3);
-    --spacing-v4: calc(1rem*1.4*4);
-    --spacing-v8\/12: calc((1rem*1.4*8)/12);
-    /* Button */
-    --color-theme-button-bg: #edecec;
-    --color-theme-accent: #f54e00;
-    /* Radius */
+
+    /* =========================
+     Layout
+     ========================= */
+    --header-height: 53px;
+    --container-max: 1290px;
+
+    /* =========================
+     Radius
+     ========================= */
     --radius-xs: 4px;
     --radius-sm: 6px;
     --radius-md: 8px;
     --radius-full: 999px;
 
-    /* Motion */
+    /* =========================
+     Motion
+     ========================= */
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
     --dur-fast: 120ms;
     --dur-med: 200ms;
 
-    /* Layout */
-    --header-height: 53px;
-    --container-max: 1290px;
+    /* =========================
+     Buttons
+     ========================= */
+    --button-padding-default: 0.78em 1.35em 0.8em;
+    --button-padding-sm: 0.4rem 0.75rem 0.42rem;
 
-    --font-weight-normal: 400;
-
-    --button-padding-default: .78em 1.35em .8em;
-    --button-padding-sm: .4rem .75rem .42rem;
-    --color-theme-text-sec:color-mix(in oklab, #edecec 60%,transparent);
-    --color-theme-card-hex: #1b1913;
-    --font-sans:"Inter", system-ui, -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Helvetica Neue, Helvetica, Arial, sans-serif;
+    /* =========================
+     Misc
+     ========================= */
+    --tw-space-x-reverse: 0;
 }
 
 /* 
@@ -110,11 +145,8 @@ body {
     height: 100%;
 }
 
-@media (min-width: 1024px) {
-    .navbar_container {
-        padding-inline: var(--space-sm);
-    }
-}
+
+
 
 /* 
      Logo
@@ -202,7 +234,6 @@ body {
 /* 
      Dropdown
      */
-
 
 
 .dropdown {
@@ -383,105 +414,17 @@ main {
 }
 
 /* =========================
-     Features 
-     ========================= */
-/* 
-.features-root {
-    padding: var(--spacing-v3) var(--spacing-g2);
-}
-
-.feature {
-    padding-block: 0;
-    padding: 0 var(--spacing-g2);
-}
-
-.container-feature {
-    background-color: var(--color-theme-card-hex);
-    border-radius: var(--radius-xs);
-    max-width: 1300px;
-    width: 100%;
-    margin-inline: auto;
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 64px;
-    align-items: start;
-    padding: 17.5px;
-}
-
-.feature-content {
-    max-width: 520px;
-}
-
-.feature-content h3 {
-    margin-bottom: 12px;
-}
-
-.feature-content p {
-    margin-bottom: 20px;
-}
-.feature-media {
-  display: flex;
-  align-items: center;
-}
-
-.feature-media-frame {
-
-  border-radius: var(--radius-xs);
-  overflow: hidden;
-}
-   .feature-media-frame img {
-  display: block;
-  width: 835px;
-  height: auto;
-
-  transform: scale(1.04);   
-  transform-origin: center;
-}
-
-.feature-content h3 {
-  font-size: 1.75rem;       
-  line-height: 1.2;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-display: flex;
-align-items: center;
-justify-content: center;
-  margin-bottom: 12px;
-  max-width: 22ch;
-}
-.feature-content p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--text-muted);
-
-  max-width: 44ch;
-  margin-bottom: 20px;
-}
-.feature-cta a {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  text-decoration: none;
-
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-} */
-
-/* =========================
    Feature Section
    ========================= */
 .features-root {
     padding: var(--spacing-v3) var(--spacing-g2);
-     
+
 }
 
 .feature {
     padding: 0 var(--spacing-g2, 24px);
-  margin-bottom: 5.5rem;;
+    margin-bottom: var(--spacing-v4);
+
 }
 
 .container-feature {
@@ -494,7 +437,7 @@ justify-content: center;
 
 }
 
-/* 24-column grid like Cursor */
+
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(24, minmax(0, 1fr));
@@ -503,16 +446,16 @@ justify-content: center;
 }
 
 .feature-grid-reverse .feature-content {
-  grid-column: 18 / -1;
-  padding-left: var(--spacing-g2);
-  padding-right: 0;
+    grid-column: 18 / -1;
+    padding-left: var(--spacing-g2);
+    padding-right: 0;
 }
 
 .feature-grid-reverse .feature-media {
-  grid-column: 1 / 17;
+    grid-column: 1 / 17;
 }
 
-/* Left text block */
+
 .feature-content {
     display: grid;
     grid-column: 1 / 8;
@@ -522,7 +465,7 @@ justify-content: center;
     padding-left: var(--spacing-g0\.25);
 }
 
-.feature-title  {
+.feature-title {
     font-family: var(--font-sans);
     color: var(--text-primary);
     font-size: 1.375rem;
@@ -531,7 +474,7 @@ justify-content: center;
     letter-spacing: -0.0003em;
 }
 
-.feature-subtext{
+.feature-subtext {
     font-family: var(--font-sans);
     color: var(--color-theme-text-sec);
     font-size: 1.375rem;
@@ -561,10 +504,118 @@ justify-content: center;
 
 
 .feature-media-frame img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: absolute;
     transform: scale(1.04);
     transform-origin: center;
+}
+
+/* =========================
+   Testimonials Section
+   ========================= */
+.testimonials {
+    padding: var(--spacing-v3) var(--spacing-g2);
+    overflow: hidden;
+}
+
+.container-testimonials {
+    max-width: var(--container-max);
+    margin-inline: auto;
+    width: 100%;
+}
+
+.testimonials-heading {
+    text-align: center;
+    margin-bottom: var(--spacing-v2\.5);
+    margin-inline: auto;
+
+}
+
+.testimonials-heading h2 {
+    color: var(--text-primary);
+    font-size: var(--text-lg);
+    line-height: var(--leading-xsnug);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: -.02em;
+}
+
+.testimonials-grid {
+    max-width: 1300px;
+    width: 100%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: var(--spacing-g1);
+}
+
+.testimonial-card {
+    padding-inline: var(--spacing-g1\.75);
+    padding-top: calc(var(--spacing-g1\.75) - .1rem);
+    padding-bottom: var(--spacing-g1\.75);
+    background-color: var(--color-theme-card-hex);
+    border-radius: var(--radius-xs);
+
+}
+
+.testimonial-figure {
+    position: relative;
+    display: flex;
+    height: 100%;
+    min-height: 180px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.testimonial-quote {
+    flex-grow: 1;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.testimonial-quote p {
+    font-size: 1 rem;
+    line-height: 1.5rem;
+    font-weight: var(--font-weight-normal);
+    letter-spacing: .005em;
+
+}
+
+.testimonial-author-row {
+    margin-top: var(--spacing-v2);
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-avatar {
+    z-index: 1;
+    border-radius: var(--radius-xs);
+    position: relative;
+    overflow: hidden;
+    height: 2.5rem;
+    width: 2.5rem;
+    flex-shrink: 0;
+    margin-inline-start: calc(var(--grid-gap) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(var(--grid-gap) * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.testimonial-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.testimonial-author {
+    font-family: var(--font-sans);
+    font-size: var(--text-xs);
+    line-height: var(--leading-normal);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--tracking-xs);
+}
+
+.author-role {
+    color: var(--color-theme-text-sec);
 }
