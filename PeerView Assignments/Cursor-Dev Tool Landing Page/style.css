@@ -48,6 +48,7 @@
     --spacing-g3: calc((10rem / 16) * 3);
 
     /* Vertical rhythm */
+    --spacing-v1: calc(1rem * 1.4);
     --spacing-v2: calc(1rem * 1.4 * 2);
     --spacing-v2\.5: calc(1rem * 1.4 * 2.5);
     --spacing-v3: calc(1rem * 1.4 * 3);
@@ -417,14 +418,13 @@ main {
    Feature Section
    ========================= */
 .features-root {
-    padding: var(--spacing-v3) var(--spacing-g2);
+    padding: var(--spacing-v3) var(--spacing-v2) var(--spacing-v2) 0;
 
 }
 
 .feature {
-    padding: 0 var(--spacing-g2, 24px);
-    margin-bottom: var(--spacing-v4);
-
+    padding: var(--spacing-g2, 20px);
+    margin-bottom: var(--spacing-v3);
 }
 
 .container-feature {
@@ -516,7 +516,7 @@ main {
    Testimonials Section
    ========================= */
 .testimonials {
-    padding: var(--spacing-v3) var(--spacing-g2);
+    padding: 0 var(--spacing-g2) var(--spacing-v3) var(--spacing-g2);
     overflow: hidden;
 }
 
@@ -618,4 +618,89 @@ main {
 
 .author-role {
     color: var(--color-theme-text-sec);
+}
+
+/* =========================
+   Story Frontier Section
+   ========================= */
+
+.story-frontier {
+    padding: var(--spacing-v3) var(--spacing-g2);
+}
+
+.container-story-frontier {
+    max-width: 1300px;
+    width: 100%;
+    margin-inline: auto;
+    margin-block: var(--spacing-v2);
+}
+
+.story-frontier-title {
+    margin-bottom: var(--spacing-v1);
+    text-align: left;
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    font-size: 1.675rem;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: -.0005em;
+    text-wrap: balance;
+}
+
+.story-frontier-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-g1);
+    align-items: stretch;
+}
+
+.story-frontier-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-theme-card-hex);
+    border-radius: var(--radius-xs);
+    padding-inline: var(--spacing-g1\.75);
+    padding-top: calc(var(--spacing-g1\.75) - .1rem);
+    padding-bottom: var(--spacing-g1\.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story-card-content h3{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400 ;
+    letter-spacing: .005rem;
+    
+}
+
+.story-card-content p{
+    color: var(--color-theme-text-sec);
+     font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400 ;
+    letter-spacing: .005rem;
+}
+
+.story-card-link{
+    margin-top: auto;
+    padding-top: var(--spacing-v8\/12);
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--color-theme-accent);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.story-card-media img{
+    padding-top: var(--spacing-g1\.75);
+    width: 98%;
+    height: 98%;
+    object-fit: contain;
+    display: block;
+    transform: scale(1.04);
+    transform-origin: center;
 }
