@@ -79,7 +79,11 @@ The goal is to demonstrate **layout thinking**, **component structure**, and **c
 ![Footer](./assets/Screenshots/footer.jpg)
 
 ---
+## Whole Screenshot of the website
 
+![Cursor](./assets/Screenshots/Cursor.png)
+
+--
 ## 🎨 Fonts & Colors Used
 
 This project uses a **token-based design system** inspired by Cursor’s documentation UI, with a strong focus on readability, hierarchy, and consistency.
