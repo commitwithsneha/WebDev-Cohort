@@ -28,7 +28,7 @@ The goal is to demonstrate **layout thinking**, **component structure**, and **c
 
 ## 🦸 Hero Section Layout
 
-![Hero Section](./assets/Screenshots/hero-section.png)
+![Hero Section](./assets/Screenshots/hero-section.jpg)
 
 ---
 
@@ -70,7 +70,7 @@ The goal is to demonstrate **layout thinking**, **component structure**, and **c
 
 ## 📎 Call To Action (CTA)
 
-![CTA](./assets/Screenshots/RecentHighlights.jpg)
+![CTA](./assets/Screenshots/Final-CTA.jpg)
 
 ---
 
@@ -140,19 +140,19 @@ This project uses a **token-based design system** inspired by Cursor’s documen
 
 ## 📌 Notes for Evaluators
 
-> Focus is on structure and layout logic
-> CSS is intentionally minimal and reusable
-> No external JS frameworks
-> Inspired by Cursor, not copied
+- Focus is on structure and layout logic
+- CSS is intentionally minimal and reusable
+- No external JS frameworks
+- Inspired by Cursor, not copied
 
 ---
 
 ## ✅ What This Demonstrates
 
-> Semantic HTML mastery
-> Layout thinking (grid vs flex)
-> Real-world product site patterns
-> Scalable architecture
+- Semantic HTML mastery
+- Layout thinking (grid vs flex)
+- Real-world product site patterns
+- Scalable architecture
 
 ---
 ## 👤 Author
