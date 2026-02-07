@@ -1153,7 +1153,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
   width: 55%;
   margin: 0 auto;
-  padding: 15opx;
+  padding: 25px;
   margin-bottom: 60px;
   border: 1px solid #e7e7e7;
 }
