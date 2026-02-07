@@ -16,7 +16,7 @@ The goal is to demonstrate **layout thinking**, **component structure**, and **c
 ## 🧠 High-Level Page Structure (Bird’s-Eye View)
 
 ![Overall Layout](./assets/Screenshots/overview-structure.jpg)
-![Overall Pattern](./assets/Screenshots/Pattern.jpg))
+![Overall Pattern](./assets/Screenshots/Pattern.jpg)
 
 ---
 
