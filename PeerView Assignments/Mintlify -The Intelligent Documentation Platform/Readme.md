@@ -94,8 +94,8 @@ The following sections have been implemented:
 
 ## 🖼️ Screenshots
 
-Screenshots of the final output are included in the repository for visual reference and easier evaluation.
-
+Screenshot of the final output are included in the repository for visual reference and easier evaluation.
+[!Mintlify](./Assets/Screenshots/Mintlify.png)
 
 ---
 
