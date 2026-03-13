@@ -59,8 +59,10 @@ These articles cover web fundamentals, networking, browsers, protocols, Git, and
 ## Javascript Fundamentals
 
 - **Control Flow in JavaScript: If, Else, and Switch Explained**
-  
   https://learnwithsneha.hashnode.dev/control-flow-in-javascript-if-else-and-switch-explained
+
+- **JavaScript Operators: The Basics You Need to Know**
+  https://learnwithsneha.hashnode.dev/javascript-operators-the-basics-you-need-to-know
 
 ## 🎯 Purpose of This Repository
 
