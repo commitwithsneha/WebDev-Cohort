@@ -67,6 +67,9 @@ These articles cover web fundamentals, networking, browsers, protocols, Git, and
 - **Understanding Variables and Data Types in JavaScript**  
   https://learnwithsneha.hashnode.dev/understanding-variables-and-data-types-in-javascript
 
+- **JavaScript Arrays 101: A Beginner’s Guide to Storing and Managing Lists of Data**  
+  https://learnwithsneha.hashnode.dev/javascript-arrays-101-a-beginner-s-guide-to-storing-and-managing-lists-of-data
+
 ## 🎯 Purpose of This Repository
 
 - Central place to showcase my technical writing
