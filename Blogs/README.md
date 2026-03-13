@@ -64,6 +64,9 @@ These articles cover web fundamentals, networking, browsers, protocols, Git, and
 - **JavaScript Operators: The Basics You Need to Know**
   https://learnwithsneha.hashnode.dev/javascript-operators-the-basics-you-need-to-know
 
+- **Understanding Variables and Data Types in JavaScript**  
+  https://learnwithsneha.hashnode.dev/understanding-variables-and-data-types-in-javascript
+
 ## 🎯 Purpose of This Repository
 
 - Central place to showcase my technical writing
