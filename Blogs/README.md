@@ -70,6 +70,9 @@ These articles cover web fundamentals, networking, browsers, protocols, Git, and
 - **JavaScript Arrays 101: A Beginner’s Guide to Storing and Managing Lists of Data**  
   https://learnwithsneha.hashnode.dev/javascript-arrays-101-a-beginner-s-guide-to-storing-and-managing-lists-of-data
 
+- **JavaScript Array Methods You Must Know**  
+  https://learnwithsneha.hashnode.dev/javascript-array-methods-you-must-know
+
 ## 🎯 Purpose of This Repository
 
 - Central place to showcase my technical writing
