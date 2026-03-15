@@ -82,6 +82,9 @@ These articles cover web fundamentals, networking, browsers, protocols, Git, and
 - **The Magic of this, call(), apply(), and bind() in JavaScript**  
   https://learnwithsneha.hashnode.dev/the-magic-of-this-call-apply-and-bind-in-javascript
 
+- **Understanding Object-Oriented Programming in JavaScript**  
+  https://learnwithsneha.hashnode.dev/understanding-object-oriented-programming-in-javascript
+
 ## 🎯 Purpose of This Repository
 
 - Central place to showcase my technical writing
