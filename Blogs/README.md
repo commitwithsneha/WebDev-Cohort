@@ -76,6 +76,9 @@ These articles cover web fundamentals, networking, browsers, protocols, Git, and
 - **Function Declaration vs Function Expression: What’s the Difference?**  
   https://learnwithsneha.hashnode.dev/function-declaration-vs-function-expression-in-javascript
 
+- **Arrow Functions in JavaScript: A Simpler Way to Write Functions**  
+  https://learnwithsneha.hashnode.dev/arrow-functions-in-javascript-a-simpler-way-to-write-functions
+
 ## 🎯 Purpose of This Repository
 
 - Central place to showcase my technical writing
