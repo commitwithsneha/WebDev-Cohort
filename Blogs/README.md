@@ -85,6 +85,9 @@ These articles cover web fundamentals, networking, browsers, protocols, Git, and
 - **Understanding Object-Oriented Programming in JavaScript**  
   https://learnwithsneha.hashnode.dev/understanding-object-oriented-programming-in-javascript
 
+- **Understanding Objects in JavaScript**  
+  https://learnwithsneha.hashnode.dev/understanding-objects-in-javascript
+
 ## 🎯 Purpose of This Repository
 
 - Central place to showcase my technical writing
