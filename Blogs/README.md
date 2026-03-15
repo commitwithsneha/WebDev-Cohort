@@ -73,6 +73,9 @@ These articles cover web fundamentals, networking, browsers, protocols, Git, and
 - **JavaScript Array Methods You Must Know**  
   https://learnwithsneha.hashnode.dev/javascript-array-methods-you-must-know
 
+- **Function Declaration vs Function Expression: What’s the Difference?**  
+  https://learnwithsneha.hashnode.dev/function-declaration-vs-function-expression-in-javascript
+
 ## 🎯 Purpose of This Repository
 
 - Central place to showcase my technical writing
