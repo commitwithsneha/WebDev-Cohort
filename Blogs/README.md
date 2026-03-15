@@ -79,6 +79,9 @@ These articles cover web fundamentals, networking, browsers, protocols, Git, and
 - **Arrow Functions in JavaScript: A Simpler Way to Write Functions**  
   https://learnwithsneha.hashnode.dev/arrow-functions-in-javascript-a-simpler-way-to-write-functions
 
+- **The Magic of this, call(), apply(), and bind() in JavaScript**  
+  https://learnwithsneha.hashnode.dev/the-magic-of-this-call-apply-and-bind-in-javascript
+
 ## 🎯 Purpose of This Repository
 
 - Central place to showcase my technical writing
